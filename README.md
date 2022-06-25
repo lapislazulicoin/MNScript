@@ -36,7 +36,7 @@ This guide will assist you in setting up a LapisLazuli Masternode on a Linux Ser
 - ```git clone https://github.com/lapislazulicoin/MNScript.git```  
 
 ##### 4. Start MN setup script: 
-- ```cd MNScript && chmod +x ./lilli-mn.shlilli-mn.sh && ./lilli-mn.sh```
+- ```cd MNScript && chmod +x ./lilli-mn.sh && ./lilli-mn.sh```
    
 **Now ask for VPS Public IP Address** 
 
