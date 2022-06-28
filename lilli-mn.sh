@@ -130,8 +130,8 @@ fi
 #Installing Daemon
 cd ~
 rm -rf /usr/local/bin/lapislazuli*
-wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.0/lilli-1.0.0-linux.tar.gz
-tar -xzvf lilli-1.0.0-linux.tar.gz
+wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.1/lilli-1.0.1-linux.tar.gz
+tar -xzvf lilli-1.0.1-linux.tar.gz
 sudo chmod -R 755 lapislazuli-cli
 sudo chmod -R 755 lapislazulid
 cp -p -r lapislazulid /usr/local/bin
@@ -179,7 +179,7 @@ done
     lapislazuli-cli stop
     sleep 5
 cd ~/.lapislazuli && rm -rf blocks chainstate sporks zerocoin
-cd ~/.lapislazuli && wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.0/bootstrap.zip
+cd ~/.lapislazuli && wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.1/bootstrap.zip
 cd ~/.lapislazuli && unzip bootstrap.zip
 sudo rm -rf ~/.lapislazuli/bootstrap.zip
 
