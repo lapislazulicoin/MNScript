@@ -69,3 +69,18 @@ This guide will assist you in setting up a LapisLazuli Masternode on a Linux Ser
 - ```lapislazuli-cli getmasternodestatus```  
 
 **Сongratulations you did it!**
+
+# Guide for LapisLazuli v1.0.1 MasterNode Update:
+The instructions below are designed for users currently running an older version of LapisLazuli v1.0.0 need update to v1.0.1
+
+
+```
+wget -q https://raw.githubusercontent.com/lapislazulicoin/MNScript/main/lilli-mn-update.sh
+
+sudo chmod +x lilli-mn-update.sh
+
+./lilli-mn-update.sh
+
+```
+
+***
