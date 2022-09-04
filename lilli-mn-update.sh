@@ -20,7 +20,7 @@ function stop_daemon {
 }
 
 
-echo "Your LapisLazuli Masternode Will be Updated To The Latest Version v1.0.1 Now" 
+echo "Your LapisLazuli Masternode Will be Updated To The Latest Version v1.0.2 Now" 
 sudo apt-get -y install unzip
 
 #remove crontab entry to prevent daemon from starting
@@ -30,10 +30,10 @@ crontab -l | grep -v 'lilliauto.sh' | crontab -
 stop_daemon
 
 rm -rf /usr/local/bin/lapislazuli*
-mkdir LILLI_1.0.1
-cd LILLI_1.0.1
-wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.1/lilli-1.0.1-linux.tar.gz
-tar -xzvf lilli-1.0.1-linux.tar.gz
+mkdir LILLI_1.0.2
+cd LILLI_1.0.2
+wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.2/lilli-1.0.2-linux.tar.gz
+tar -xzvf lilli-1.0.2-linux.tar.gz
 mv lapislazulid /usr/local/bin/lapislazulid
 mv lapislazuli-cli /usr/local/bin/lapislazuli-cli
 chmod +x /usr/local/bin/lapislazuli*
@@ -42,11 +42,11 @@ rm -rf ~/.lapislazuli/chainstate
 rm -rf ~/.lapislazuli/sporks
 rm -rf ~/.lapislazuli/peers.dat
 cd ~/.lapislazuli/
-wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.1/bootstrap.zip
+wget https://github.com/lapislazulicoin/lilli/releases/download/1.0.2/bootstrap.zip
 unzip bootstrap.zip
 
 cd ..
-rm -rf ~/.lapislazuli/bootstrap.zip ~/LILLI_1.0.1
+rm -rf ~/.lapislazuli/bootstrap.zip ~/LILLI_1.0.2
 
 
 # add new nodes to config file
